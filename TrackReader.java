@@ -19,14 +19,6 @@ import java.util.stream.Collectors;
 public class TrackReader
 {
     /**
-     * Create the track reader, ready to read tracks from the music library folder.
-     */
-    public TrackReader()
-    {
-        // Nothing to do here.
-    }
-    
-    /**
      * Read music files from the given library folder
      * with the given suffix.
      * @param folder The folder to look for files.
