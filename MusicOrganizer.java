@@ -57,7 +57,8 @@ public class MusicOrganizer
      */
     public void playTrack(int index)
     {
-        if(indexValid(index)) {
+        if(indexValid(index)) 
+        {
             Track track = tracks.get(index);
             player.startPlaying(track.getFilename());
             System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
@@ -110,10 +111,11 @@ public class MusicOrganizer
             PlayList[i] = r;
         }
 
-        for (int i = 0; i < tracks.size(); i++){
+        for (int i = 0; i < tracks.size(); i++)
+        {
             System.out.println(PlayList[i]);
-            int song = PlayList[i];
-            playTrack(song);
+            int track = PlayList[i];
+            playTrack(track);
         }
     }
         
@@ -160,7 +162,8 @@ public class MusicOrganizer
      */
     public void removeTrack(int index)
     {
-        if(indexValid(index)) {
+        if(indexValid(index)) 
+        {
             tracks.remove(index);
         }
     }
@@ -170,7 +173,8 @@ public class MusicOrganizer
      */
     public void playFirst()
     {
-        if(tracks.size() > 0) {
+        if(tracks.size() > 0) 
+        {
             player.startPlaying(tracks.get(0).getFilename());
         }
     }
@@ -214,7 +218,8 @@ public class MusicOrganizer
         ArrayList<Track> tempTracks = reader.readTracks(folderName, ".mp3");
 
         // Put all thetracks into the organizer.
-        for(Track track : tempTracks) {
+        for(Track track : tempTracks) 
+        {
             addTrack(track);
         }
     }
