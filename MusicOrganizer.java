@@ -1,28 +1,13 @@
 import java.util.ArrayList;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import java.util.Random;
->>>>>>> RandomPlaylist
-=======
-import java.util.Random;
->>>>>>> RandomSong
 
 /**
  * A class to hold details of audio tracks.
  * Individual tracks may be played.
  * 
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @author Giovanny Ospina
  * @version 10.15.2017
-=======
- * @author David J. Barnes and Michael Kölling
- * @version 2016.02.29
 >>>>>>> RandomPlaylist
-=======
- * @author Giovanny Ospina
- * @version 10/15/17
 >>>>>>> RandomSong
  */
 public class MusicOrganizer
@@ -33,16 +18,8 @@ public class MusicOrganizer
     private MusicPlayer player;
     // A reader that can read music files and load them as tracks.
     private TrackReader reader;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     // Initializes the Random feature
     private Random randomtrack;
->>>>>>> RandomPlaylist
-=======
-    // Initializes the random feature
-    private Random randomtrack;
->>>>>>> RandomSong
 
     /**
      * Create a MusicOrganizer
@@ -52,14 +29,7 @@ public class MusicOrganizer
         tracks = new ArrayList<>();
         player = new MusicPlayer();
         reader = new TrackReader();
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         randomtrack = new Random();
->>>>>>> RandomPlaylist
-=======
-        randomtrack = new Random();
->>>>>>> RandomSong
         readLibrary("../audio");
         System.out.println("Music library loaded. " + getNumberOfTracks() + " tracks.");
         System.out.println();
@@ -89,16 +59,8 @@ public class MusicOrganizer
      */
     public void playTrack(int index)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if(indexValid(index)) {
-=======
         if(indexValid(index)) 
         {
->>>>>>> RandomPlaylist
-=======
-        if(indexValid(index)) {
->>>>>>> RandomSong
             Track track = tracks.get(index);
             player.startPlaying(track.getFilename());
             System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
@@ -113,18 +75,10 @@ public class MusicOrganizer
     {
         return tracks.size();
     }
-    
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
      /**
      * 4.43 - Gets a random track and plays it.
      * @param index The index of the track that is randomized
-=======
-     /**
-     * 4.43 - Selects a random track and plays it
-     * @param index The index of the track to be randomized
->>>>>>> RandomSong
      */
     public void randomTrack(int index)
     {
@@ -139,7 +93,6 @@ public class MusicOrganizer
     }
     
     /**
-<<<<<<< HEAD
      * 4.45 - Gets a random track from the list and plays each exactly once.
      */
     public void playAllRandom()
@@ -167,11 +120,8 @@ public class MusicOrganizer
             playTrack(track);
         }
     }
-        
->>>>>>> RandomPlaylist
+    
     /**
-=======
->>>>>>> RandomSong
      * List a track from the collection.
      * @param index The index of the track to be listed.
      */
@@ -214,16 +164,8 @@ public class MusicOrganizer
      */
     public void removeTrack(int index)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if(indexValid(index)) {
-=======
         if(indexValid(index)) 
         {
->>>>>>> RandomPlaylist
-=======
-        if(indexValid(index)) {
->>>>>>> RandomSong
             tracks.remove(index);
         }
     }
@@ -233,16 +175,8 @@ public class MusicOrganizer
      */
     public void playFirst()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if(tracks.size() > 0) {
-=======
-        if(tracks.size() > 0) 
+        if(tracks.size() > 0)
         {
->>>>>>> RandomPlaylist
-=======
-        if(tracks.size() > 0) {
->>>>>>> RandomSong
             player.startPlaying(tracks.get(0).getFilename());
         }
     }
@@ -284,18 +218,9 @@ public class MusicOrganizer
     private void readLibrary(String folderName)
     {
         ArrayList<Track> tempTracks = reader.readTracks(folderName, ".mp3");
-
         // Put all thetracks into the organizer.
-<<<<<<< HEAD
-<<<<<<< HEAD
-        for(Track track : tempTracks) {
-=======
         for(Track track : tempTracks) 
         {
->>>>>>> RandomPlaylist
-=======
-        for(Track track : tempTracks) {
->>>>>>> RandomSong
             addTrack(track);
         }
     }
