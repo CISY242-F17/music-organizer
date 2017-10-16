@@ -1,9 +1,13 @@
 #BlueJ package file
 <<<<<<< HEAD
+<<<<<<< HEAD
 dependency1.from=TrackReader
 =======
 dependency1.from=MusicOrganizer
 >>>>>>> RandomPlaylist
+=======
+dependency1.from=TrackReader
+>>>>>>> RandomSong
 dependency1.to=Track
 dependency1.type=UsesDependency
 dependency2.from=MusicOrganizer
@@ -11,17 +15,25 @@ dependency2.to=MusicPlayer
 dependency2.type=UsesDependency
 dependency3.from=MusicOrganizer
 <<<<<<< HEAD
+<<<<<<< HEAD
 dependency3.to=MusicPlayer
 =======
 dependency3.to=TrackReader
 >>>>>>> RandomPlaylist
+=======
+dependency3.to=MusicPlayer
+>>>>>>> RandomSong
 dependency3.type=UsesDependency
 dependency4.from=TrackReader
 dependency4.to=Track
 dependency4.type=UsesDependency
 editor.fx.0.height=737
 editor.fx.0.width=814
+<<<<<<< HEAD
 editor.fx.0.x=402
+=======
+editor.fx.0.x=476
+>>>>>>> RandomSong
 editor.fx.0.y=0
 objectbench.height=94
 objectbench.width=453
@@ -30,12 +42,17 @@ package.divider.vertical=0.798804780876494
 package.editor.height=394
 package.editor.width=672
 <<<<<<< HEAD
+<<<<<<< HEAD
 package.editor.x=482
 package.editor.y=70
 =======
 package.editor.x=428
 package.editor.y=50
 >>>>>>> RandomPlaylist
+=======
+package.editor.x=297
+package.editor.y=54
+>>>>>>> RandomSong
 package.frame.height=600
 package.frame.width=800
 package.numDependencies=4
@@ -64,7 +81,11 @@ target2.showInterface=false
 target2.type=ClassTarget
 target2.typeParameters=
 target2.width=100
+<<<<<<< HEAD
 target2.x=190
+=======
+target2.x=150
+>>>>>>> RandomSong
 target2.y=170
 target3.height=60
 target3.name=MusicOrganizer
@@ -82,5 +103,9 @@ target4.showInterface=false
 target4.type=ClassTarget
 target4.typeParameters=
 target4.width=80
+<<<<<<< HEAD
 target4.x=80
+=======
+target4.x=50
+>>>>>>> RandomSong
 target4.y=300
