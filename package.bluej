@@ -1,15 +1,23 @@
 #BlueJ package file
+<<<<<<< HEAD
 dependency1.from=TrackReader
+=======
+dependency1.from=MusicOrganizer
+>>>>>>> RandomPlaylist
 dependency1.to=Track
 dependency1.type=UsesDependency
 dependency2.from=MusicOrganizer
-dependency2.to=Track
+dependency2.to=MusicPlayer
 dependency2.type=UsesDependency
 dependency3.from=MusicOrganizer
+<<<<<<< HEAD
 dependency3.to=MusicPlayer
+=======
+dependency3.to=TrackReader
+>>>>>>> RandomPlaylist
 dependency3.type=UsesDependency
-dependency4.from=MusicOrganizer
-dependency4.to=TrackReader
+dependency4.from=TrackReader
+dependency4.to=Track
 dependency4.type=UsesDependency
 editor.fx.0.height=737
 editor.fx.0.width=814
@@ -21,8 +29,13 @@ package.divider.horizontal=0.6005221932114883
 package.divider.vertical=0.798804780876494
 package.editor.height=394
 package.editor.width=672
+<<<<<<< HEAD
 package.editor.x=482
 package.editor.y=70
+=======
+package.editor.x=428
+package.editor.y=50
+>>>>>>> RandomPlaylist
 package.frame.height=600
 package.frame.width=800
 package.numDependencies=4
