@@ -180,10 +180,11 @@ public class MusicOrganizer
     {
         ArrayList<Track> tracksShuffled = new ArrayList<>(tracks);
         Collections.shuffle(tracksShuffled);
-        
-        if(tracksShuffled.size() > 0) {
-            player.startPlaying(tracksShuffled.get(0).getFilename());
-            
+                
+            while(tracksShuffled.size() > 0)
+        {
+            Track t = tracksShuffled.remove(0);
+            player.playSample(t.getFilename());
         };
     }
 }
