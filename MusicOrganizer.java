@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Random;
+import java.util.Collections;
 
 /**
  * A class to hold details of audio tracks.
@@ -169,5 +171,19 @@ public class MusicOrganizer
         for(Track track : tempTracks) {
             addTrack(track);
         }
+    }
+        
+    /**
+     * Shuffles all songs once.
+     */
+    public void Shuffle()
+    {
+        ArrayList<Track> tracksShuffled = new ArrayList<>(tracks);
+        Collections.shuffle(tracksShuffled);
+        
+        if(tracksShuffled.size() > 0) {
+            player.startPlaying(tracksShuffled.get(0).getFilename());
+            
+        };
     }
 }
