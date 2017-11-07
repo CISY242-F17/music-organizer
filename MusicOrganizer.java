@@ -97,27 +97,13 @@ public class MusicOrganizer
      */
     public void playAllRandom()
     {
-        int rindex;
-        int[] PlayList = new int[tracks.size()];
-        
-        for (int i = 0; i < tracks.size(); i++)
+        Random rand = new Random();
+        ArrayList<Track> leftToPlay = new ArrayList<>(tracks);
+        while(leftToPlay.size() > 0)
         {
-            PlayList[i] = i;
-        }
-        
-        for (int i = tracks.size()-1; i > 0; i--)
-        {
-            rindex = randomtrack.nextInt(i + 1);
-            int r = PlayList[rindex];
-            PlayList[rindex] = PlayList[i];
-            PlayList[i] = r;
-        }
-
-        for (int i = 0; i < tracks.size(); i++)
-        {
-            System.out.println(PlayList[i]);
-            int track = PlayList[i];
-            playTrack(track);
+            int index = rand.nextInt(leftToPlay.size());
+            Track t = leftToPlay.remove(index);
+            player.playSample(t.getFilename());
         }
     }
     
